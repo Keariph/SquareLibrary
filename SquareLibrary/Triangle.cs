@@ -8,7 +8,7 @@ namespace SquareLibrary
 {
     public class Triangle : IShape
     {
-        public void Square()
+        public void Area()
         {
             Console.WriteLine("Enter three sides(a b c)");
             string[] sides = Console.ReadLine().Split(' ');

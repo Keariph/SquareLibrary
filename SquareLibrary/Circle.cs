@@ -11,7 +11,7 @@ namespace SquareLibrary
 {
     public class Circle : IShape
     {
-        public void Square()
+        public void Area()
         {
             Console.WriteLine("Enter a radius");
             double radius = Double.Parse(Console.ReadLine());
