@@ -11,12 +11,27 @@ namespace SquareLibrary
 {
     public class Circle : IShape
     {
-        public void Area()
+        public double Area()
         {
             Console.WriteLine("Enter a radius");
-            double radius = Double.Parse(Console.ReadLine());
-            double square = radius * Math.PI;
-            Console.WriteLine("Square of circle = " + square);
-        }  
+            double radius;
+
+            if (!Double.TryParse(Console.ReadLine(), out radius))
+            {
+                Console.WriteLine("Radius is not number");
+                return -1;
+            }
+
+            if (radius > 0)
+            {
+                double square = Math.Pow(radius, 2) * Math.PI;
+                Console.WriteLine("Square of circle = " + square);
+                return square;
+            }
+
+            Console.WriteLine("Radius is negative");
+            return -1;
+
+        }
     }
 }

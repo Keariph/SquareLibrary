@@ -8,6 +8,6 @@ namespace SquareLibrary
 {
     public interface IShape
     {
-        void Area();
+        double Area();
     }
 }
