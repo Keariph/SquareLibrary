@@ -18,7 +18,7 @@ namespace AreaTests
             double expect = 78.539816339744831d;
             IShape circle = new Circle();
             Console.SetIn(new StringReader(radius.ToString()));
-            double result = circle.Area();
+            double result = circle.CalculateArea();
             Assert.AreEqual(expect, result);
         }
 
@@ -29,7 +29,7 @@ namespace AreaTests
             double expect = -1;
             IShape circle = new Circle();
             Console.SetIn(new StringReader(radius.ToString()));
-            double result = circle.Area();
+            double result = circle.CalculateArea();
             Assert.AreEqual(expect, result);
         }
 
@@ -40,7 +40,7 @@ namespace AreaTests
             double expect = -1;
             IShape circle = new Circle();
             Console.SetIn(new StringReader(radius.ToString()));
-            double result = circle.Area();
+            double result = circle.CalculateArea();
             Assert.AreEqual(expect, result);
         }
 
@@ -54,7 +54,7 @@ namespace AreaTests
             IShape triangle = new Triangle();
             string triangleString = aSide.ToString() + " " + bSide.ToString() + " " + cSide.ToString();
             Console.SetIn(new StringReader(triangleString));
-            double result = triangle.Area();
+            double result = triangle.CalculateArea();
             Assert.AreEqual(expect, result);
         }
 
@@ -68,7 +68,7 @@ namespace AreaTests
             IShape triangle = new Triangle();
             string triangleString = aSide.ToString() + " " + bSide.ToString() + " " + cSide.ToString();
             Console.SetIn(new StringReader(triangleString));
-            double result = triangle.Area();
+            double result = triangle.CalculateArea();
             Assert.AreEqual(expect, result);
         }
 
@@ -82,7 +82,7 @@ namespace AreaTests
             IShape triangle = new Triangle();
             string triangleString = aSide.ToString() + " " + bSide.ToString() + " " + cSide.ToString();
             Console.SetIn(new StringReader(triangleString));
-            double result = triangle.Area();
+            double result = triangle.CalculateArea();
             Assert.AreEqual(expect, result);
         }
 
@@ -108,7 +108,7 @@ namespace AreaTests
             IShape triangle = new Triangle();
             string triangleString = aSide.ToString() + " " + bSide.ToString() + " " + cSide.ToString();
             Console.SetIn(new StringReader(triangleString));
-            double result = triangle.Area();
+            double result = triangle.CalculateArea();
             Assert.AreEqual(expect, result);
         }
     }

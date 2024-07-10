@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace SquareLibrary
 {
+    /// <summary>
+    /// Calculating the area of triangle.
+    /// </summary>
     public class Triangle : IShape
     {
-        public double Area()
+        /// <summary>
+        /// Calculating the area of the shape through the three sides.
+        /// </summary>
+        /// <returns>The area of the triangle.</returns>
+        public double CalculateArea()
         {
             Console.WriteLine("Enter three sides(a b c)");
             string[] sides = Console.ReadLine().Split(' ');
@@ -49,6 +56,13 @@ namespace SquareLibrary
             return -1;
         }
 
+        /// <summary>
+        /// Define that the triangle is rectangular.
+        /// </summary>
+        /// <param name="aSide">The A side</param>
+        /// <param name="bSide">The B side</param>
+        /// <param name="cSide">The C side</param>
+        /// <returns>True or false</returns>
         public bool IsRectangular(double aSide, double bSide, double cSide)
         {
             if (Math.Pow(aSide, 2) + Math.Pow(bSide, 2) == Math.Pow(cSide, 2))

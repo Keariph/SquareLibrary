@@ -8,8 +8,8 @@ namespace Example
         {
             IShape circle = new Circle();
             IShape triangle = new Triangle();
-            circle.Area();
-            triangle.Area();
+            circle.CalculateArea();
+            triangle.CalculateArea();
         }
     }
 }

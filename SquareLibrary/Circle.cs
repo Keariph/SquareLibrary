@@ -9,9 +9,16 @@ using System.Text;
 
 namespace SquareLibrary
 {
+    /// <summary>
+    /// Calculating the area of circle.
+    /// </summary>
     public class Circle : IShape
     {
-        public double Area()
+        /// <summary>
+        /// Calculating the area of the circle through the radius.
+        /// </summary>
+        /// <returns>The area of the circle.</returns>
+        public double CalculateArea()
         {
             Console.WriteLine("Enter a radius");
             double radius;
